@@ -20,15 +20,12 @@ clc   % clear command window
 % in path (white bar above) navigate to D:\MATLAB\Data and make new folder for condition   
 
 % point to tanks (enter file path)
-path_to_data = 'D:\Photometry\CFDShortDay3B\Tanks';
+path_to_data = 'D:\Photometry\CFDDay1B\Tanks';
 
 % set up Tank name, variables to extract
 tankdir = [path_to_data];
-% tankname = 'Eric_stim_temp-230824-135010'; % name of your tank
-% tankname = 'Avi_stim-230330-145256';
-% tankname = 'Avi_stim-230801-132002';
-tankname = 'Avi_stim-240105-123944';
-blockname = '392-4_Day3B-240816-131050'; % name of your file
+tankname = 'Eric_stim-230824-135010'; % name of your tank
+blockname = '392-4_Day1B-240816-131050'; % name of your file
 
 % pick any file name to save time series (must end in .mat)
 filename = blockname;

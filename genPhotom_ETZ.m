@@ -17,7 +17,7 @@ close all
 clc
 
 codeDir = 'D:\MATLAB'; %CUSTOMIZE
-dataDir = 'D:\MATLAB\Data\TailLift'; %CUSTOMIZE
+dataDir = 'D:\MATLAB\Data\CFDDay1B'; %CUSTOMIZE
 
 addpath(codeDir);
 
@@ -33,16 +33,16 @@ path_to_data =  {dataDir}; %CUSTOMIZE
 %%%% commonStr == common string between your experiments of interest
 region = 'grabNE'; 
 commonStr = region; %regionON = 0; %mark as 0 if region not included in name
-savename = 'Tail Lift';
+savename = 'CFD Day 1B';
 titleName = savename;
 
-rawtimings = dlmread('TIMING - TailLift.txt'); %change to correct event times txt file
+rawtimings = dlmread('TIMING - CFD.txt'); %change to correct event times txt file
 %%%%Txt files found at D:\MATLAB\PhotometryCode, for individual timings seeline 124
 
-timeBefore = 30;
-% timeBefore = 180;
-timeAfter  = 150;
-% timeAfter  = 90;
+% timeBefore = 30;
+timeBefore = 180;
+% timeAfter  = 150;
+timeAfter  = 17;
 xlims = [-timeBefore timeAfter];
     
 %%%%%%%% change the savename to get each timelocked trial (usually of stim)
